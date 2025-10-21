@@ -23,12 +23,11 @@ namespace math
         {
             return 1;
         }
-        else if (x == 0)
+        if (x == 0)
         {
             return 0;
         }
-        else
-            return -1;
+        return -1;
     }
 
     double max(double x, double y)
@@ -69,7 +68,6 @@ namespace math
 
     double normalize(double x)
     {
-
         return remainder(x, 2 * PI);
     }
 
