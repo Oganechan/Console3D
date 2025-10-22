@@ -12,8 +12,8 @@ public:
     Matrix4(); // Identity matrix
     Matrix4(const float values[16]);
 
-    float get(int32_t row, int32_t col) const { return m_[col + 4 * row]; }        // Get element at [row][col]
-    void set(int32_t row, int32_t col, float value) { m_[col + 4 * row] = value; } // Set element at [row][col]
+    inline float get(int32_t row, int32_t col) const { return m_[col + 4 * row]; }        // Get element at [row][col]
+    inline void set(int32_t row, int32_t col, float value) { m_[col + 4 * row] = value; } // Set element at [row][col]
 
     static Matrix4 identity();                         // Returns identity matrix
     static Matrix4 translation(const Vector3 &offset); // Translation matrix

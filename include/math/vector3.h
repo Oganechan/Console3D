@@ -10,9 +10,9 @@ public:
     Vector3(float value);
     Vector3(float x, float y, float z);
 
-    float x() const { return x_; }
-    float y() const { return y_; }
-    float z() const { return z_; }
+    inline float x() const { return x_; }
+    inline float y() const { return y_; }
+    inline float z() const { return z_; }
 
     Vector3 add(const Vector3 &other) const;  // Addition of vectors
     Vector3 sub(const Vector3 &other) const;  // Subtraction of vectors
