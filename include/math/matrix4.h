@@ -2,7 +2,7 @@
 #define MATRIX_4_H
 
 #include <cstdint>
-#include <algorithm>z
+#include <algorithm>
 #include "vector3.h"
 #include "vector4.h"
 
